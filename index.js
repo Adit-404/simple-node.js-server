@@ -2,7 +2,7 @@
 
 const http = require("http")
 const server = http.createServer((req, res) =>{
-    res.setHeader = "Content-Type", "text/html"
+    res.setHeader("Content-Type", "text/html")
 
     if(req.url == "/" && req.method == "GET"){
         res.statusCode = 200
@@ -88,7 +88,7 @@ const server = http.createServer((req, res) =>{
             <p>The page you are looking for does not exist.</p>
 
             <a href="/">Go to Home</a>
-            
+
             </body>
             </html>`)
     }
