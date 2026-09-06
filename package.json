@@ -1,0 +1,13 @@
+{
+  "name": "nodejs-server",
+  "version": "1.0.0",
+  "description": "simple node.js server",
+  "license": "ISC",
+  "author": "Adit",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "st": "node index.js"
+  }
+}
