@@ -27,7 +27,28 @@ const server = http.createServer((req, res) =>{
             </html>`)
     }
 
-    
+    if(req.url == "/about" && req.method == "GET"){
+        res.statusCode = 200
+
+        res.end(`
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>About</title>
+            </head>
+            <body>
+
+            <h1>About page</h1>
+            <p>Hi, I'm Arafat Islam Adit. I'm a beginner MERN stact web devloper.</p>
+
+            <nav>
+                <a href="/">Home</a>
+                <a href="/contact">Contact</a>
+            </nav>
+
+            </body>
+            </html>`)
+    }
 })
 
 server.listen(5000, ()=>{
